@@ -10,6 +10,7 @@ import PostDetail from './views/PostDetail.vue'
 import createColumn from './views/createColumn.vue'
 import mine from './components/mine.vue'
 import Boardmsg from './views/Boardmsg.vue'
+import navigation from './views/navigation.vue'
 import missView from './views/missView.vue'
 const routerHistory = createWebHashHistory()
 const router = createRouter({
@@ -80,6 +81,14 @@ const router = createRouter({
       component: Boardmsg,
       meta: {
         title: '留言板'
+      }
+    },
+    {
+      path: '/navigation',
+      name: 'navigation',
+      component: navigation,
+      meta: {
+        title: '网页导航'
       }
     },
     {

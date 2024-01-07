@@ -1,6 +1,6 @@
 <template>
   <global-header :user="currentUser"></global-header>
-
+  <mouse-point></mouse-point>
     <!-- <loader v-if="isLoading" background="rgba(0,0,0,0.8 )" ></loader> -->
     <router-view></router-view>
     <el-backtop :right="50" :bottom="100"  />
@@ -26,11 +26,13 @@ import GlobalHeader from './components/GlobalHeader.vue'
 import { GlobalDataProps } from './store'
 import createMessage from './components/createMessage'
 import { ElBacktop } from 'element-plus'
+import mousePoint from './components/mousePoint.vue'
 export default defineComponent({
   name: 'App',
   components: {
     GlobalHeader,
-    ElBacktop
+    ElBacktop,
+    mousePoint
     // Loader
   },
   setup () {

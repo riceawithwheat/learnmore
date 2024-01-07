@@ -15,14 +15,14 @@
         <div class="mb-3">
           <label class="form-label">密码</label>
           <validate-input
+            type="password"
             placeholder="请输入密码"
             :rules="passwordRules"
             v-model="passwordVal"
-            type="password"
           />
         </div>
         <template #submit>
-          <button type="submit" class="btn btn-primary btn-block btn-large">登录</button>
+          <button type="button" class="btn btn-primary btn-block btn-large">登录</button>
         </template>
       </validate-form>
     </div>

@@ -8,7 +8,7 @@
             <li class="list-inline-item mx-2"><router-link to="/miss" class="btn btn-primary my-2" style="width: 100px;">文章归档</router-link></li>
             <li class="list-inline-item mx-2"><router-link to="/miss" class="btn btn-primary my-2" style="width: 100px;">说说</router-link></li>
             <li class="list-inline-item mx-2"><router-link to="/board" class="btn btn-primary my-2" style="width: 100px;">留言板</router-link></li>
-            <li class="list-inline-item mx-2"><router-link to="/miss" class="btn btn-primary my-2" style="width: 100px;">网页导航</router-link></li>
+            <li class="list-inline-item mx-2"><router-link to="/navigation" class="btn btn-primary my-2" style="width: 100px;">网页导航</router-link></li>
             <li class="list-inline-item mx-2"><router-link to="/login" class="btn btn-primary my-2" style="width: 100px;">登陆</router-link></li>
             <li class="list-inline-item mx-2"><router-link to="/signup" class="btn btn-primary my-2" style="width: 100px;">注册</router-link></li>
           </ul>
@@ -17,7 +17,7 @@
             <li class="list-inline-item mx-2"><router-link to="miss/" class="btn btn-primary my-2" style="width: 100px;">文章归档</router-link></li>
             <li class="list-inline-item mx-2"><router-link to="/miss" class="btn btn-primary my-2" style="width: 100px;">说说</router-link></li>
             <li class="list-inline-item mx-2"><router-link to="/board" class="btn btn-primary my-2" style="width: 100px;">留言板</router-link></li>
-            <li class="list-inline-item mx-2"><router-link to="/miss" class="btn btn-primary my-2" style="width: 100px;">网页导航</router-link></li>
+            <li class="list-inline-item mx-2"><router-link to="/navigation" class="btn btn-primary my-2" style="width: 100px;">网页导航</router-link></li>
             <li class="list-inline-item">
               <!-- <pre>{{ user }}</pre> -->
              <dropdown :title="`你好，${user.name}`">

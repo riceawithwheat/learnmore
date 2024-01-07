@@ -31,13 +31,13 @@
           <div class="mb-3">
               <label class="form-label">重复密码</label>
               <validate-input
+              type="password"
               :rules="repeatePasswordRules" v-model="formData.repeatePassword"
               placeholder="请再次输入密码"
-              type="password"
               ></validate-input>
           </div>
           <template #submit>
-              <button type="submit" class="btn btn-primary btn-block btn-large">注册新用户</button>
+              <button type="button" class="btn btn-primary btn-block btn-large">注册新用户</button>
           </template>
   </validate-form>
   </div>

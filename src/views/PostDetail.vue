@@ -10,13 +10,15 @@
           <!-- <pre>{{ currentPost[0] }}</pre> -->
         <img :src="currentImageUrl" alt="currentPost.title" class="rounded-lg img-fluid my-4 mx-auto" style="width: 300px;" v-if="currentImageUrl">
         <h2 class="mb-4">{{ currentPost[0].title }}</h2>
-        <div class="user-profile-component border-top border-bottom py-3">
-            <div class="col">
-                <user-profile :user="currentPost[0].authorId"
+        <div class="user-profile-component border-top border-bottom py-1 row h-1">
+            <div class="col-8  p-2 w-1">
+                <!-- <user-profile :user="currentPost[0].authorId"
                 v-if="typeof ( currentPost[0].authorId) === 'object'"
-                ></user-profile>
+                ></user-profile> -->
+                <img src="../assets/column.jpeg" alt="user.nickName" class="rounded-circle img-thumbnail" style="width: 60px;">
+                <span class="text-muted col text-left font-italic align-item-center" style="padding-left: 10px;">匿名</span>
             </div>
-            <span class="text-muted col text-right font-italic">发表于：{{ currentPost[0].createTime }}</span>
+            <span class="text-muted col-4 text-right font-italic align-item-center pt-4">发表于：{{ currentPost[0].createTime }}</span>
         </div>
             <div v-html="currentHTML"></div>
             <div v-if="showEditArea" class="btn-group mt-5">
@@ -31,7 +33,6 @@
 </template>
 <script lang="ts">
 import { defineComponent, onMounted, computed, ref } from 'vue'
-import UserProfile from '../components/UserProfile.vue'
 import Modal from '@/components/Modal.vue'
 import createMessage from '../components/createMessage'
 import { useStore } from 'vuex'
@@ -42,7 +43,6 @@ import axios from 'axios'
 export default defineComponent({
   name: 'post-detail',
   components: {
-    UserProfile,
     Modal
   },
   setup () {
